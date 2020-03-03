@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>35-8</title>
+    <style>
+        canvas {
+            border: thin solid black; margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="140">
+        Your browser doesn't support the <code>vanvas</code> element.
+    </canvas>
+</body>
+<script>
+    var ctx = document.getElementById("canvas").getContext("2d");
+
+    var grad = ctx.createLinearGradient(0,0,500,140);
+    grad.addColorStop(0, "red");
+    grad.addColorStop(0.5, "white");
+    grad.addColorStop(1, "black");
+
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0,500,140);
+</script>
+</html>

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>35-2</title>
+    <style>
+        canvas {
+            border: medium double black; margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="200">
+        Your browser doesn't support the <code>vanvas</code> element.
+    </canvas>
+</body>
+<script>
+    var ctx = document.getElementById("canvas").getContext("2d");
+    ctx.fillRect(10,10,50,50);
+</script>
+</html>
